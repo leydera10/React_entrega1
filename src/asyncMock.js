@@ -35,7 +35,7 @@ export const getProducts = () => {
     })
 }
 
-export const getProductById= (productId) => {
+export const getProductsById= (productId) => {
     return new Promise((resolve) => {
         setTimeout(()=> {
             resolve(products.find(prod => prod.id === productId))
