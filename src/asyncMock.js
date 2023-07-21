@@ -3,6 +3,7 @@ const products = [
         id: '1',
         name:'Aire Acondicionado',
         price: 800,
+        category: 'Aires Acondicionados',
         img: 'https://cbafederal.net/wp-content/uploads/2021/02/i-12-a.png',
         stock: 25,
         descripcion:'aire Acondicionado 3000'
@@ -11,6 +12,7 @@ const products = [
         id: '2',
         name:'Aire Acondicionado',
         price: 1000,
+        category: 'Generadores',
         img: 'https://cbafederal.net/wp-content/uploads/2021/02/i-12-a.png',
         stock: 30,
         descripcion:'aire Acondicionado 1000'
@@ -19,6 +21,7 @@ const products = [
         id: '3',
         name:'Aire Acondicionado',
         price: 1200,
+        category: 'Repuestos',
         img: 'https://cbafederal.net/wp-content/uploads/2021/02/i-12-a.png',
         stock: 50,
         descripcion:'aire Acondicionado 4000'
