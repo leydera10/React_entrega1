@@ -1,12 +1,13 @@
-import cart from  "./assets/cart.png"
+import React from 'react'
+import {ShoppingCartIcon} from '@heroicons/react/24/outline'
 
-const CartWidGet = () => {
-    return (
-        <div>
-            <img src= {cart} alt="cart-widget" />
-            0
-        </div>
-    )
+function CartWidget() {
+  return (
+    <div className='flex gap-3'>
+        <ShoppingCartIcon className=' h-8'/>
+        <p className=' text-xl'>0</p>
+    </div>
+  )
 }
 
-export default CartWidGet
+export default CartWidget

@@ -1,5 +1,7 @@
 
 
-/* Agrega más estilos según las necesidades de tu App */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
                                                                                                                   
