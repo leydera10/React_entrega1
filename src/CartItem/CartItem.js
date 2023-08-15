@@ -1,19 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
 
-const CartItem = ( item ) => {
-  const { name, price, quantity } = item
+const CartItem = ({ id, name, price, quantity }) => {
+    const { removeItem } = useContext(CartContext);
 
-  return (
-    <div className="cart-item">
-      <div className="cart-item-info">
-     
-        <p>name: {name}</p>
-        <p>Price: ${price}</p>
-        <p>Quantity: {quantity}</p>
-       
-      </div>
-    </div>
-  );
+    return (
+        <div>
+            <h4>{name}</h4>
+            <p>Price: ${price}</p>
+            <p>Quantity: {quantity}</p>
+            <button className="Option" onClick={() => removeItem(id)}>Eliminar</button>
+        </div>
+    );
 };
 
 export default CartItem;
